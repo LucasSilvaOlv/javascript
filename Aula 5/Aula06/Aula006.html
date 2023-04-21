@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edinaldo Pereira</title>
+     
+    <style>
+
+        body {
+              font-weight:bolder; 
+              font-size: 30px;
+              color:rgb(0, 0, 0); 
+              
+              
+        }
+        input {
+            font: 30px ;
+            color:black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+   <input type="number" name="txt1" id="txt1">
+    <input type="text" name="op" id="op">
+   <input type="number" name="tx2" id="txt2">
+   <input type="button" value="Somar" onclick="somar()">
+   <div id="res">Resultado</div>
+
+
+    <script>
+        function somar() 
+        {
+
+            var n1 = Number.document.querySelector("input#txt1")
+            var n2 = Number.document.querySelector("input#txt2")
+            var res = document.querySelector("div#res")
+            var op = Number.document.querySelector("input#op")
+            var n3
+
+            switch (op) 
+    {
+
+        case '+':
+        n3 = n1 + n2; 
+        break;
+
+        case '-':
+            n3 = n1 - n2;
+            break;
+
+        case '*':
+            n3 = n1 * n2;
+            break;
+        
+        case '/':
+            n3 = n1 / n2;
+            break;
+        
+        case '**':
+            n3 = n1 ** n2;
+            break;    
+               
+  
+    }
+    res.innerHTML = `${n3}`
+
+
+
+        }
+
+    
+
+  
+    </script>
+
+    
+</body>
+</html>
